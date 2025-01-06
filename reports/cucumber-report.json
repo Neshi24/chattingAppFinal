@@ -1,0 +1,130 @@
+[
+  {
+    "description": "  As a user\n  I want to send and receive messages\n  So that I can communicate with my friends",
+    "elements": [
+      {
+        "description": "",
+        "id": "messaging-functionality;successfully-sending-a-message",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successfully sending a message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am logged in as \"user1@example.com\"",
+            "match": {
+              "location": "features\\support\\messages.steps.cjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2587300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I am on the chat page with \"user2@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send the message \"Hello, User2!\"",
+            "match": {
+              "location": "features\\support\\messages.steps.cjs:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the message \"Hello, User2!\" should appear in the chat",
+            "match": {
+              "location": "features\\support\\messages.steps.cjs:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "messaging-functionality;receiving-a-message",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Receiving a message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am logged in as \"user2@example.com\"",
+            "match": {
+              "location": "features\\support\\messages.steps.cjs:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 786900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I am on the chat page with \"user1@example.com\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "\"user1@example.com\" sends the message \"Hi, User2!\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the message \"Hi, User2!\" should appear in the chat",
+            "match": {
+              "location": "features\\support\\messages.steps.cjs:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "messaging-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Messaging functionality",
+    "tags": [],
+    "uri": "features\\messages.feature"
+  }
+]
